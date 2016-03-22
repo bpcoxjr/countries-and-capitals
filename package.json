@@ -1,0 +1,29 @@
+{
+  "name": "countries-and-capitals",
+  "version": "1.0.0",
+  "description": "Thinkful app using geonames.org API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpcoxjr/countries-and-capitals.git"
+  },
+  "author": "B Patrick Cox Jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bpcoxjr/countries-and-capitals/issues"
+  },
+  "homepage": "https://github.com/bpcoxjr/countries-and-capitals#readme",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-connect": "^3.2.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.1"
+  }
+}

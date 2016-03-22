@@ -1,0 +1,27 @@
+{
+  "name": "countries-and-capitals",
+  "description": "Thinkful app using geonames.org API",
+  "main": "index.js",
+  "authors": [
+    "B Patrick Cox Jr"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bpcoxjr/countries-and-capitals",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.2",
+    "angular-animate": "^1.5.2",
+    "jquery": "^2.2.2",
+    "bootstrap": "^3.3.6",
+    "animate.css": "^3.5.1",
+    "normalize-css": "normalize.css#^4.0.0",
+    "angular-route": "^1.5.2"
+  }
+}
