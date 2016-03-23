@@ -1,0 +1,7 @@
+#things we want git to ignore and not upload to github go here...
+
+node_modules
+bower_components
+.DS_Store
+npm-debug.log
+build
