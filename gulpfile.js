@@ -7,8 +7,6 @@ var uglify = require('gulp-uglify');
 var cleanCSS = require('gulp-clean-css');
 var imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
-//var del = require('del');
-
 
 // *** individual gulp tasks ***
 

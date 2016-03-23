@@ -20,13 +20,23 @@ angular.module('countriesCapitalsApp')
   $scope.showDetail = function(country) {
     $location.path('/countries/'+country.countryCode);
   };
+
+  $scope.predicate = 'countryName';
+  $scope.reverse=false;
+
   //take the string objects for area and population and turn them into a floating point number
   angular.forEach($scope.countries, function (country) {
     country.areaInSqKm = parseFloat(country.areaInSqKm);
     country.population = parseFloat(country.population);
   });
+
+  $scope.startsWith = function (actual, expected) {
+    var lowerStr = (actual + "").toLowerCase();
+    return lowerStr.indexOf(expected.toLowerCase()) === 0;
+  };
+
 }])
-//controller for the detailed country view
+//controller
 .controller('detailsCtrl', ['$scope','$route','countryData',function($scope, $route, countryData) {
 
   countryData.getCountry($route.current.params.countryCode).then(function(result){
