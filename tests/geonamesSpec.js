@@ -14,6 +14,8 @@ describe('geonames', function(){
           geonames: [{key:0}, {key:1}]
         });
 
+        $httpBackend.expect('GET', './partials/home.html').respond(200);
+
       var countries
 
       $q.when(dataFactory.getCountries()).then(function(result){
