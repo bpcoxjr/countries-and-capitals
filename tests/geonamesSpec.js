@@ -4,7 +4,7 @@ describe('geonames', function(){
 	inject(function(_$rootScope_, _$injector_, $templateCache){
 		$rootScope = _$rootScope_;
 		$injector = _$injector_;
-		$templateCache.put('./partials/home.html', '<.partials/home.html/>');
+		$templateCache.put('./partials/home.html');
 	});
 
 	it('(the getCountries function) should query the geonames api for countries data',
@@ -22,7 +22,7 @@ describe('geonames', function(){
         countries = result.geonames
       });
 
-      $rootScope.$digest();
+      $rootScope.$digest(); 
       $httpBackend.flush();
       expect(countries.length).toBe(2);
       $httpBackend.verifyNoOutstandingRequest();
