@@ -16,7 +16,7 @@ describe('geonames', function(){
 
         $httpBackend.expect('GET', './partials/home.html').respond(200);
 
-      var countries
+      var countries;
 
       $q.when(dataFactory.getCountries()).then(function(result){
         countries = result.geonames
