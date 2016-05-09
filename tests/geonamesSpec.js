@@ -7,7 +7,7 @@ describe('geonames', function(){
 		$templateCache.put('./partials/home.html');
 	});
 
-	it('(the getCountries function) should query the geonames api for countries data',
+it('(the getCountries function) should query the geonames api for countries data',
     inject(function(dataFactory, $httpBackend, $rootScope, $q) {
       $httpBackend.expect('JSONP', 'http://api.geonames.org/countryInfoJSON?callback=JSON_CALLBACK&username=bpcoxjr')
         .respond({
