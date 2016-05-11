@@ -61,17 +61,15 @@ header {
     position: relative;
     overflow: auto;
     font-size: 1em;
-    margin-bottom: 2em;
     border: 1px solid #ddd;
 }
 
 .home {
-    margin-top: 9em;
+    margin-top: 5em;
     border: 1px solid #ddd;
     padding: 1em;
     border-radius: 1em;
     background-color: rgba(255,255,255,.9);
-    box-shadow: 0 2px 3px #999;
 }
 
 .intro-paragraph {
@@ -115,13 +113,13 @@ header {
 
 .button {
     border-radius: 5px;
+    border: 0;
     position: relative;
     font-size: 1.25em;
     color: #fff;
     width: 12em;
-    margin: auto;
+    margin: 2em 0 3em;
     background-color: #262626;
-    box-shadow: 3px 3px 3px #999;
     padding: .5em 1em;
     -webkit-font-smoothing: antialiased;
     text-align: center;
@@ -341,7 +339,7 @@ ul {
 }
 
 #footer {
-    position: absolute;
+    position: fixed;
     text-align: center;
     display: table;
     height: 2em;
